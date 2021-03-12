@@ -18,7 +18,7 @@ jobs:
       - run: npm install
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${secrets.github-actions}
+          NODE_AUTH_TOKEN: 90cfa532fb5c1e1bb4328c4d2ccaaf26e021ce08
           
           
           
