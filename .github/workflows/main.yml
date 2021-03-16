@@ -16,10 +16,10 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@vinayg-cp'
       - run: npm install
+      - run: echo "registry=https://npm.pkg.github.com/@vinayg-cp" >> .npmrc
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-#           NODE_AUTH_TOKEN: ${{secrets.GPR_PAT}}
         run: npm publish
           
           
